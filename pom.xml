@@ -5,7 +5,8 @@
 	<packaging>war</packaging>
 	<name>CountFP</name>
 	<version>0.0.1</version>
-
+	
+	<!-- START REPOSITORIES -->
 	<repositories>
 		<repository>
 			<id>ibiblio</id>
@@ -23,7 +24,9 @@
 			<url>http://repository.codehaus.org</url>
 		</repository>
 	</repositories>
+	<!-- END REPOSITORIES -->
 	
+	<!-- START DENPENDENCIES -->
 	<dependencies> 
 		<dependency>
 			<groupId>junit</groupId>
@@ -38,7 +41,16 @@
 			<version>2.0.6</version>
 			<scope>compile</scope>
 		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.15</version>
+			<scope>compile</scope>
+		</dependency>
 	</dependencies>
+	<!-- END DENPENDENCIES -->
+	
+	<!-- START BUILD -->
 	<build>
 		<plugins>
 			<plugin>
@@ -54,4 +66,5 @@
 			</plugin>
 		</plugins>
 	</build>
+	<!-- END BUILD -->
 </project>
