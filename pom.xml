@@ -34,7 +34,8 @@
 			<version>3.8.1</version>
 			<scope>compile</scope>
 		</dependency>
-		
+
+		<!-- Struts dependencies -->
 		<dependency>
 			<groupId>org.apache.struts</groupId>
 			<artifactId>struts2-core</artifactId>
@@ -47,6 +48,7 @@
 			<version>2.0.6</version>
 			<scope>compile</scope>
 		</dependency>
+		<!-- / Struts dependencies -->
 		
 		<dependency>
 			<groupId>log4j</groupId>
@@ -54,6 +56,8 @@
 			<version>1.2.15</version>
 			<scope>compile</scope>
 		</dependency>
+		
+		<!-- Spring dependencies -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
@@ -84,6 +88,7 @@
 			<version>3.0.0.RELEASE</version>
 			<scope>compile</scope>
 		</dependency>
+		<!-- / Spring dependencies -->
 	</dependencies>
 	<!-- END DENPENDENCIES -->
 	
