@@ -4,7 +4,7 @@
     "http://struts.apache.org/dtds/struts-2.0.dtd">
 <struts>
 	<package name="countfp" extends="struts-default">
-		<action name="index" class="com.latorre.countfp.action.IndexAction">
+		<action name="index" class="indexAction">
 			<result>jsp/index.jsp</result>
 		</action>
 	</package>
