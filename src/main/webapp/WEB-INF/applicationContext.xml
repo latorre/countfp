@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="MacRoman"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -8,5 +8,32 @@
 			http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd 
 			http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd">
 			
-	<bean id="indexAction" class="com.latorre.countfp.action.IndexAction" scope="prototype"/>
+	<bean id="indexAction" class="com.latorre.countfp.action.IndexAction" scope="prototype">
+		<!-- <property name="types" ref="types"/> -->
+	</bean>
+
+	<bean id="dataAction" class="com.latorre.countfp.action.DataAction" scope="prototype">
+		<property name="types" ref="types"/>
+		<property name="complexities" ref="complexities" />
+	</bean>
+	
+	<bean id="types" class="java.util.ArrayList">
+		<constructor-arg>
+			<list>
+				<value>EE</value>
+				<value>CE</value>
+				<value>SE</value>
+			</list>
+		</constructor-arg>	
+	</bean>
+	
+	<bean id="complexities" class="java.util.ArrayList">
+		<constructor-arg>
+			<list>
+				<value>B</value>
+				<value>M</value>
+				<value>A</value>
+			</list>
+		</constructor-arg>	
+	</bean>
 </beans>
