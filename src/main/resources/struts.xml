@@ -8,7 +8,7 @@
 			<result>jsp/index.jsp</result>
 		</action>
 		<action name="data" class="dataAction">
-			<result>jsp/addData.jsp</result>
+			<result>jsp/formData.jsp</result>
 		</action>
 	</package>
 </struts>
