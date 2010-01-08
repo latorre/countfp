@@ -1,4 +1,5 @@
 <%@page pageEncoding="ISO-8859-1" contentType="text/html; charset=ISO-8859-1" %>
+<%@ taglib prefix="s" uri="/struts-tags" %>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
